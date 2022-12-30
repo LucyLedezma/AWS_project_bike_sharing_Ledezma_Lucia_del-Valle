@@ -11,7 +11,7 @@ I realized that if the prediction are negative an error occurs, In order to solv
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-First of all I realized that dataset has a datatime feature, as I learned in the clasroom , 
+First of all I realized that dataset has a datatime feature, as I learned in the clasroom this field ca be splitted.
 In the first moment I tried only adding the hour feature, but for standard suggesstions I splitted the date in individual parts, hour, day, month and year.
 Ref. Model Deployment Workflow. 8. Data Cleasing and Feature Engeneering : datetime parser
 
