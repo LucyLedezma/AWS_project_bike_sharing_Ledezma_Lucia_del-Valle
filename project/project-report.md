@@ -26,10 +26,11 @@ When I tried different hyper parameter, the model performed worse, it's score wa
 I would spend more time in hyperparamter tunning and in feature engineering. 
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-model	     time_limit	 eval_metric	           presets        score
-initial  	 600	   root_mean_square_error	   best_quality	  1.79209
-add_features 600	   root_mean_square_error      best_quality	  0.67743
-hpo	         700	mean_absolute_error	           high_quality	  0.69137
+| model	     |time_limit |eval_metric	         |presets         |score    |
+|------------|-----------|-----------------------|----------------|---------|
+|initial  	 | 600	     |root_mean_square_error | best_quality   | 1.79209 |
+|add_features| 600	     |root_mean_square_error | best_quality   | 0.67743 |
+|hpo	     |    700	 | mean_absolute_error	 | high_quality   | 0.69137 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -43,11 +44,12 @@ hpo	         700	mean_absolute_error	           high_quality	  0.69137
 I started training a basic model with Autogluon, then I continued doing feature engineering when I got a better model performance, after that I tried hyperparameter tunning by setting three parameters with different values but the results were not I spected, so  I wanted to improve even more my model then I decided to split the datetime field in individual parts (year, month, day and hour) and with the last configuration I ran the trainning process again by ignoring the datetime column, with which the model improve a lot. Also I plotted several representative graphs such as lines, histograms and heatmap in order to visualize the distributions of the variables and their correlations, the trainning behaviour, etc.
 
 Final Summary Table:
-	model	    time_limit	eval_metric	             presets	    score
-initial	        600	        root_mean_square_error	 best_quality	1.79209
-add_features    600	        root_mean_square_error	 best_quality	0.67743
-hpo	            700	        mean_absolute_error	     high_quality	0.69137
-add_features_2	700	        mean_absolute_error	     high_quality	0.45839
+| model	       |time_limit | eval_metric	       |presets         |score    |
+|--------------|-----------|-----------------------|----------------|---------|
+|initial  	   | 600	   |root_mean_square_error | best_quality   | 1.79209 |
+|add_features  | 600	   |root_mean_square_error | best_quality   | 0.67743 |
+|hpo	       | 700	   | mean_absolute_error   | high_quality   | 0.69137 |
+add_features_2 | 700	   | mean_absolute_error   | high_quality	| 0.45839 |
 
 Finally the last model "add_features_2" is the best.
 
