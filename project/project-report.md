@@ -33,12 +33,15 @@ I would spend more time in hyperparamter tunning and in feature engineering.
 |hpo	     |    700	 | mean_absolute_error	 | high_quality   | 0.69137 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
-
+#### With basic requirements:
 ![model_train_score.png](img/model_train_score.png)
-
+#### all
+![model_train_score.png](img/model_train_extended_score.png)
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
-
+#### With basic requirements:
 ![model_test_score.png](img/model_test_score.png)
+#### all
+![model_test_score.png](img/model_test_extended_score.png)
 
 ## Summary
 I started training a basic model with Autogluon, then I continued doing feature engineering when I got a better model performance, after that I tried hyperparameter tunning by setting three parameters with different values but the results were not I spected, so  I wanted to improve even more my model then I decided to split the datetime field in individual parts (year, month, day and hour) and with the last configuration I ran the trainning process again by ignoring the datetime column, with which the model improve a lot. Also I plotted several representative graphs such as lines, histograms and heatmap in order to visualize the distributions of the variables and their correlations, the trainning behaviour, etc.
