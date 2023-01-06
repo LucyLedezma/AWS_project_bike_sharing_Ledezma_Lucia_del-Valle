@@ -1,5 +1,5 @@
-,model,time_limit,eval_metric,presets,score
-0,initial,600,root_mean_square_error,best_quality,1.79209
-1,add_features,600,root_mean_square_error,best_quality,0.67743
-2,hpo,700,mean_absolute_error,high_quality,0.69137
-3,add_features_2,700,mean_absolute_error,high_quality,0.45839
+,model,learning_rate,num_epochs,num_boost_round,score
+0,initial,0.0003,20,100,1.8041
+1,add_features,0.0003,20,100,0.68806
+2,hpo,0.11,30,130,0.48898
+3,add_features_2,0.11,30,130,0.49749
